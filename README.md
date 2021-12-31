@@ -4,8 +4,6 @@ Depth contour occlusion depth map generation algorithm
 
 **Input video, camera internal parameters and virtual pictures to be displayed to generate contour depth map video and corresponding virtual real occlusion composite video**
 
- 
-
 ## Input
 
 1.Video file [at least 5 seconds is required, and the resolution is recommended to be 720p (1280 x 720) or above, otherwise there is a chance that sparse depth generation will fail]
