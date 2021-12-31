@@ -8,7 +8,7 @@ Depth contour occlusion depth map generation algorithm
 ## Input
  
 1.Video file [at least 5 seconds is required, and the resolution is recommended to be 720p (1280 x 720) or above, otherwise there is a chance that sparse depth generation will fail]
-> Save video files in the directory: < b >/input/video/ori_video.mp4</b>
+> Save video files in the directory: <b>/input/video/ori_video.mp4</b>
  
 2.Virtual picture
 > Unlimited picture size
