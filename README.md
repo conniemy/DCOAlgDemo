@@ -23,11 +23,11 @@ Depth contour occlusion depth map generation algorithm
 
 4.Camera parameters
 
-> Pinhole camera model: fx fy cx cy
-> Fisheye camera model: fx fy cx cy k1 k2 k3 k4
-> fx fy is the focal length parameter, and the unit is pixel. **if accurate Fx / Fy cannot be obtained**, it can be uniformly assigned as lens focal length, conversion: <b>F (pixel) = f (mm) / photosensitive unit size (mm)</b>
-> cx cy is the coordinate of the image principal point, <b>if accurate cx/ cy cannot be obtained,cx = video frame width / 2 and cy = video frame height / 2</b>
-> If the fisheye camera model is selected, the distortion correction parameters <b>k1, k2, k3 and k4must have</b>
+> Pinhole camera model: fx fy cx cy   
+> Fisheye camera model: fx fy cx cy k1 k2 k3 k4  
+> fx fy is the focal length parameter, and the unit is pixel. **if accurate Fx / Fy cannot be obtained**, it can be uniformly assigned as lens focal length, conversion: <b>F (pixel) = f (mm) / photosensitive unit size (mm)</b>  
+> cx cy is the coordinate of the image principal point, <b>if accurate cx/ cy cannot be obtained,cx = video frame width / 2 and cy = video frame height / 2</b>  
+> If the fisheye camera model is selected, the distortion correction parameters <b>k1, k2, k3 and k4must have</b>   
 
 ## Call
 
