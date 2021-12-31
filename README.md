@@ -8,14 +8,14 @@ Depth contour occlusion depth map generation algorithm
 ## Input
  
 1.Video file [at least 5 seconds is required, and the resolution is recommended to be 720p (1280 x 720) or above, otherwise there is a chance that sparse depth generation will fail]
->Save video files in the directory: < b >/input/video/ori_video.mp4</b>
+> Save video files in the directory: < b >/input/video/ori_video.mp4</b>
  
 2.Virtual picture
->Unlimited picture size
+> Unlimited picture size
 The image file is saved in the algorithm root directory < b >/virtual_obj.png</b>
  
 3.Camera model
->The user selects one of the < b > pinhole camera model < / b > and < b > fisheye camera model < / b > according to the actual situation
+> The user selects one of the < b > pinhole camera model < / b > and < b > fisheye camera model < / b > according to the actual situation
  
 4.Camera parameters
 >Pinhole camera model: FX FY CX CY
@@ -36,10 +36,10 @@ Prototype: < b > DCO_entry(cam_model, scaling, fx, fy, cx, cy, d=0.5, k1=0, k2=0
  
 ## Output
 1.Depth video
->The video file is saved in the directory:/output_video/depth.mp4 
+> The video file is saved in the directory:/output_video/depth.mp4 
  
 2.Composite video
->The video file is saved in the directory:/output_video/mixed.mp4 
+> The video file is saved in the directory:/output_video/mixed.mp4 
  
 ## Project directory structure
 >+── dcoalgdemo [project assembly root directory]
@@ -82,3 +82,6 @@ Prototype: < b > DCO_entry(cam_model, scaling, fx, fy, cx, cy, d=0.5, k1=0, k2=0
 │ +── videoParams.Txt [parameters related to assembly video, including target resolution and frame rate]
 │ +── virtual_obj.Png [virtual picture to be mixed]
 │ +── ...[necessary dynamic link library]
+
+## Contact.
+This repository is maintained by Naye Ji (conniemy). Feel free to reach out directly at jinaye@cuz.edu.cn with any questions or comments. Thanks to contributors:Haoxiang Zhang
