@@ -12,27 +12,27 @@ Depth contour occlusion depth map generation algorithm
  
 2.Virtual picture
 > Unlimited picture size
-The image file is saved in the algorithm root directory < b >/virtual_obj.png</b>
+The image file is saved in the algorithm root directory <b>/virtual_obj.png</b>
  
 3.Camera model
-> The user selects one of the < b > pinhole camera model < / b > and < b > fisheye camera model < / b > according to the actual situation
+> The user selects one of the <b>pinhole camera model</b> and <b> fisheye camera model</b> according to the actual situation
  
 4.Camera parameters
 >Pinhole camera model: FX FY CX CY
 Fisheye camera model: FX FY CX CY K1 K2 K3 K4
-FX FY is the focal length parameter, and the unit is pixel. < b > if accurate FX / FY cannot be obtained, it can be uniformly assigned as lens focal length < / b >, conversion: < b > F (pixel) = f (mm) / photosensitive unit size (mm)</b>
-CX CY is the coordinate of the image principal point, < b > if accurate CX / CY cannot be obtained, CX = video frame width / 2 and CY = video frame height / 2</b>
-If the fisheye camera model is selected, the distortion correction parameters < b > K1, K2, K3 and K4 must have</b>
+FX FY is the focal length parameter, and the unit is pixel. <b> if accurate FX / FY cannot be obtained, it can be uniformly assigned as lens focal length</b>, conversion: <b>F (pixel) = f (mm) / photosensitive unit size (mm)</b>
+CX CY is the coordinate of the image principal point, <b>if accurate CX / CY cannot be obtained, CX = video frame width / 2 and CY = video frame height / 2</b>
+If the fisheye camera model is selected, the distortion correction parameters <b>K1, K2, K3 and K4 must have</b>
 
 ## Call
 1.Environment dependency: opencv34+/ numpy/ pyquaterion/ matplotlib/ scipy 
 2.Interface description:
-Prototype: < b > DCO_entry(cam_model, scaling, fx, fy, cx, cy, d=0.5, k1=0, k2=0, k3=0, k4=0)</b> 
-<b>[cam_model] < / b > camera model, 1 indicates that the camera model is a pinhole camera model, and 2 indicates that the camera model is a fish eye camera model
-<b>[scaling] < / b > process scaling, and the final processed and output video frame size is < b > original video size / scaling</b>
-<b>[FX / FY / CX / CY] < / b > camera internal parameter data entered by the user
-<b>[d] < / b > the depth of the virtual image ranges from 0 to 1. The closer it is to 1, the greater the depth of the virtual image, and vice versa
-<b>[K1 / K2 / K3 / K4] < / b > if the user selects a pinhole camera model, these four parameters can be left blank. If the user selects a fisheye camera model, these four distortion parameters must be entered
+Prototype: <b>DCO_entry(cam_model, scaling, fx, fy, cx, cy, d=0.5, k1=0, k2=0, k3=0, k4=0)</b> 
+<b>[cam_model]</b> camera model, 1 indicates that the camera model is a pinhole camera model, and 2 indicates that the camera model is a fish eye camera model
+<b>[scaling]</b>process scaling, and the final processed and output video frame size is <b> original video size / scaling</b>
+<b>[FX / FY / CX / CY]</b> camera internal parameter data entered by the user
+<b>[d]</b> the depth of the virtual image ranges from 0 to 1. The closer it is to 1, the greater the depth of the virtual image, and vice versa
+<b>[K1 / K2 / K3 / K4]</b> if the user selects a pinhole camera model, these four parameters can be left blank. If the user selects a fisheye camera model, these four distortion parameters must be entered
  
 ## Output
 1.Depth video
