@@ -5,7 +5,7 @@ Depth contour occlusion depth map generation algorithm
  
  
  
-##Input
+## Input
  
 1.Video file [at least 5 seconds is required, and the resolution is recommended to be 720p (1280 x 720) or above, otherwise there is a chance that sparse depth generation will fail]
 >Save video files in the directory: < b >/input/video/ori_video.mp4</b>
@@ -23,8 +23,8 @@ Fisheye camera model: FX FY CX CY K1 K2 K3 K4
 FX FY is the focal length parameter, and the unit is pixel. < b > if accurate FX / FY cannot be obtained, it can be uniformly assigned as lens focal length < / b >, conversion: < b > F (pixel) = f (mm) / photosensitive unit size (mm)</b>
 CX CY is the coordinate of the image principal point, < b > if accurate CX / CY cannot be obtained, CX = video frame width / 2 and CY = video frame height / 2</b>
 If the fisheye camera model is selected, the distortion correction parameters < b > K1, K2, K3 and K4 must have</b>
- 
-##Call
+
+## Call
 1.Environment dependency: opencv34+/ numpy/ pyquaterion/ matplotlib/ scipy 
 2.Interface description:
 Prototype: < b > DCO_entry(cam_model, scaling, fx, fy, cx, cy, d=0.5, k1=0, k2=0, k3=0, k4=0)</b> 
@@ -34,14 +34,14 @@ Prototype: < b > DCO_entry(cam_model, scaling, fx, fy, cx, cy, d=0.5, k1=0, k2=0
 <b>[d] < / b > the depth of the virtual image ranges from 0 to 1. The closer it is to 1, the greater the depth of the virtual image, and vice versa
 <b>[K1 / K2 / K3 / K4] < / b > if the user selects a pinhole camera model, these four parameters can be left blank. If the user selects a fisheye camera model, these four distortion parameters must be entered
  
-##Output
+## Output
 1.Depth video
 >The video file is saved in the directory:/output_video/depth.mp4 
  
 2.Composite video
 >The video file is saved in the directory:/output_video/mixed.mp4 
  
-##Project directory structure
+## Project directory structure
 >+ - dcoalgdemo [project assembly root directory]
 │ +── input_Video [store input video]
 │ │ +── ori_video.XXX [original video stored]
