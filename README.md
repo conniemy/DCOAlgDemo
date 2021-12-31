@@ -42,7 +42,7 @@ Prototype: < b > DCO_entry(cam_model, scaling, fx, fy, cx, cy, d=0.5, k1=0, k2=0
 >The video file is saved in the directory:/output_video/mixed.mp4 
  
 ## Project directory structure
->+ - dcoalgdemo [project assembly root directory]
+>+── dcoalgdemo [project assembly root directory]
 │ +── input_Video [store input video]
 │ │ +── ori_video.XXX [original video stored]
 │ +── sparse_Data [store data needed to generate sparse depth]
