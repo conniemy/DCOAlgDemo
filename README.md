@@ -1,6 +1,5 @@
 # DCOAlgDemo
-
-Depth contour occlusion depth map generation algorithm
+Source code of MR depth contour occlusion depth map generation algorithm
 
 ## Data
 More data for input videos and results can download from Google Drive: https://drive.google.com/file/d/1FJvLerzhRPQ4IyjdS_r1RQf5Ol39HW39/view?usp=sharing or Baidu Yun：https://pan.baidu.com/s/1SSM6LJDbwiotEJmuPIbaWQ?pwd=1234 Pin：1234
