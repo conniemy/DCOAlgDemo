@@ -3,7 +3,7 @@
 Depth contour occlusion depth map generation algorithm
 
 ## Data
-More data for input videos and results can download from https://drive.google.com/file/d/1FJvLerzhRPQ4IyjdS_r1RQf5Ol39HW39/view?usp=sharing
+More data for input videos and results can download from Google Drive: https://drive.google.com/file/d/1FJvLerzhRPQ4IyjdS_r1RQf5Ol39HW39/view?usp=sharing or Baidu Yun：https://pan.baidu.com/s/1SSM6LJDbwiotEJmuPIbaWQ?pwd=1234 Pin：1234
 
 **Input video, camera internal parameters and virtual pictures to be displayed to generate contour depth map video and corresponding virtual real occlusion composite video**
 
